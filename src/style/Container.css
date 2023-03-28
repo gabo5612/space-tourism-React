@@ -1,0 +1,23 @@
+.navBarMobile,.navBarTablet,.navBarDesktop{
+    position:fixed ;
+}
+
+.navBarMobile{
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    justify-content: space-between;
+    margin: 24px 24px 0 24px;
+}
+
+@media (min-Width: 768px) {
+    .tabletMenu{
+        display: none;
+    }
+}
+
+@media (min-Width: 1024px) {
+    .desktopMenu{
+        display: none;
+    }
+}

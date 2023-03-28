@@ -1,0 +1,44 @@
+:root{
+    --dark:#0B0D17;
+    --subtitle:#D0D6F9;
+    --white:#FFFFFF;
+    --sH1:150px;
+    --sH2:100px;
+    --sH3:56px;
+    --sH4:32px;
+    --sH5:28px;
+    --subHeading1:28px;
+    --subHeading2:14px;
+    --navText:16px;
+    --bodyText:16px;
+    --titles:'Bellefair', serif;
+    --text:'Barlow Condensed', sans-serif;
+
+}
+.Home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/home/background-home-mobile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: var(--white);
+}
+.Content{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-Width: 768px) {
+    .Home{
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        
+    }
+}
+
+@media (min-Width: 1024px) {
+    .Home{
+        background-image: url('../assets/home/background-home-desktop.jpg');
+    }
+}
