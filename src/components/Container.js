@@ -12,7 +12,7 @@ import closeHamburger from '../assets/shared/icon-close.svg';
 function Container() {
   const [content, setContent] = useState(1);
   const [imgSrc, setImgSrc]=useState(hamburger)
-  const [imgSrc2, setImgSrc2]=useState(closeHamburger)
+
   const [menu, setMenu]=useState('mobileMenu')
 
   const handleClick=() =>{
@@ -45,11 +45,11 @@ function Container() {
             
       <nav className={menu}>
         <div className='CloseMenu'>
-      <img src={imgSrc2} alt='menu' onClick={handleClick}/>
+      <img src={closeHamburger} alt='menu' onClick={handleClick}/>
       </div>
         <ul>
           <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(2)}>01  DESTINATION</button></li>
           <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
           <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
         </ul>
@@ -65,10 +65,10 @@ function Container() {
         <div className='middleBarTablet'></div>
         <div className='rightSideNavBarTablet'>
         <img src={imgSrc} alt='menu' onClick={handleClick}/>
-      <nav className={menu}>
+      <nav className={menu} >
         <ul>
           <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(2)}>01  DESTINATION</button></li>
           <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
           <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
         </ul>
@@ -83,7 +83,7 @@ function Container() {
         </div>
         <div className='middleBarDesktop'></div>
         <div className='rightSideNavBarDesktop'>
-      <nav className='desktopMenu'>
+      <nav className='desktopMenu' >
         <ul>
           <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
           <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
