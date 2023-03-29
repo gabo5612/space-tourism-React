@@ -7,16 +7,22 @@ import { Crew } from './Crew';
 import { Technology } from './Technology';
 import logo from '../assets/shared/logo.svg'
 import hamburger from '../assets/shared/icon-hamburger.svg';
+import darkBackground from '../assets/shared/darkBackground.JPG'
 import closeHamburger from '../assets/shared/icon-close.svg';
 function Container() {
   const [content, setContent] = useState(1);
   const [imgSrc, setImgSrc]=useState(hamburger)
+  const [imgSrc2, setImgSrc2]=useState(closeHamburger)
+  const [menu, setMenu]=useState('mobileMenu')
+
   const handleClick=() =>{
     if(imgSrc===hamburger){
-                setImgSrc(closeHamburger)
+                setImgSrc(darkBackground)
+                setMenu('responsiveMenu')
                 
             } else{
                setImgSrc(hamburger)
+               setMenu('mobileMenu')
               
             }
     }
@@ -35,13 +41,15 @@ function Container() {
         </div>
         <div className='middleBarMobile'></div>
         <div className='rightSideNavBarMobile'>
-            <img src={imgSrc} alt='menu' onClick={handleClick}/>
-      <nav className='mobileMenu'>
+            <img src={imgSrc} alt='menu' className='imgMenu' onClick={handleClick}/>
+            
+      <nav className={menu}>
+      <img src={imgSrc2} alt='menu' onClick={handleClick}/>
         <ul>
-          <li><button onClick={() => handleNavClick(1)}>Home</button></li>
-          <li><button onClick={() => handleNavClick(2)}>Destination</button></li>
-          <li><button onClick={() => handleNavClick(3)}>Crew</button></li>
-          <li><button onClick={() => handleNavClick(4)}>Technology</button></li>
+          <li><button onClick={() => handleNavClick(1)}>00 home</button></li>
+          <li><button onClick={() => handleNavClick(2)}>01 Destination</button></li>
+          <li><button onClick={() => handleNavClick(3)}>02 Crew</button></li>
+          <li><button onClick={() => handleNavClick(4)}>03 Technology</button></li>
         </ul>
       </nav>
       </div>
@@ -55,12 +63,12 @@ function Container() {
         <div className='middleBarTablet'></div>
         <div className='rightSideNavBarTablet'>
         <img src={imgSrc} alt='menu' onClick={handleClick}/>
-      <nav className='tabletMenu'>
+      <nav className={menu}>
         <ul>
-          <li><button onClick={() => handleNavClick(1)}>Home</button></li>
-          <li><button onClick={() => handleNavClick(2)}>Destination</button></li>
-          <li><button onClick={() => handleNavClick(3)}>pinch</button></li>
-          <li><button onClick={() => handleNavClick(4)}>Technology</button></li>
+        <li><button onClick={() => handleNavClick(1)}>00 home</button></li>
+          <li><button onClick={() => handleNavClick(2)}>01 Destination</button></li>
+          <li><button onClick={() => handleNavClick(3)}>02 Crew</button></li>
+          <li><button onClick={() => handleNavClick(4)}>03 Technology</button></li>
         </ul>
       </nav>
       </div>
@@ -75,10 +83,10 @@ function Container() {
         <div className='rightSideNavBarDesktop'>
       <nav className='desktopMenu'>
         <ul>
-          <li><button onClick={() => handleNavClick(1)}>Home</button></li>
-          <li><button onClick={() => handleNavClick(2)}>Destination</button></li>
-          <li><button onClick={() => handleNavClick(3)}>Crew</button></li>
-          <li><button onClick={() => handleNavClick(4)}>Tech</button></li>
+        <li><button onClick={() => handleNavClick(1)}>00 home</button></li>
+          <li><button onClick={() => handleNavClick(2)}>01 Destination</button></li>
+          <li><button onClick={() => handleNavClick(3)}>02 Crew</button></li>
+          <li><button onClick={() => handleNavClick(4)}>03 Technology</button></li>
         </ul>
       </nav>
       </div>

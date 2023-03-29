@@ -11,7 +11,7 @@
     --subHeading2:14px;
     --navText:16px;
     --bodyText:16px;
-    --titles:'Bellefair', serif;
+    --title:'Bellefair', serif;
     --text:'Barlow Condensed', sans-serif;
 
 }
@@ -29,6 +29,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 @media (min-Width: 768px) {
     .Home{
