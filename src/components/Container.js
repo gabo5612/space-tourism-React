@@ -44,12 +44,14 @@ function Container() {
             <img src={imgSrc} alt='menu' className='imgMenu' onClick={handleClick}/>
             
       <nav className={menu}>
+        <div className='CloseMenu'>
       <img src={imgSrc2} alt='menu' onClick={handleClick}/>
+      </div>
         <ul>
-          <li><button onClick={() => handleNavClick(1)}>00 home</button></li>
-          <li><button onClick={() => handleNavClick(2)}>01 Destination</button></li>
-          <li><button onClick={() => handleNavClick(3)}>02 Crew</button></li>
-          <li><button onClick={() => handleNavClick(4)}>03 Technology</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
         </ul>
       </nav>
       </div>
@@ -65,10 +67,10 @@ function Container() {
         <img src={imgSrc} alt='menu' onClick={handleClick}/>
       <nav className={menu}>
         <ul>
-        <li><button onClick={() => handleNavClick(1)}>00 home</button></li>
-          <li><button onClick={() => handleNavClick(2)}>01 Destination</button></li>
-          <li><button onClick={() => handleNavClick(3)}>02 Crew</button></li>
-          <li><button onClick={() => handleNavClick(4)}>03 Technology</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
         </ul>
       </nav>
       </div>
@@ -83,10 +85,10 @@ function Container() {
         <div className='rightSideNavBarDesktop'>
       <nav className='desktopMenu'>
         <ul>
-        <li><button onClick={() => handleNavClick(1)}>00 home</button></li>
-          <li><button onClick={() => handleNavClick(2)}>01 Destination</button></li>
-          <li><button onClick={() => handleNavClick(3)}>02 Crew</button></li>
-          <li><button onClick={() => handleNavClick(4)}>03 Technology</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
         </ul>
       </nav>
       </div>
