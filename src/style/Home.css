@@ -31,6 +31,51 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.title{
+    font-family: var(--title);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 100px;
+    color: var(--white);
+    margin: 16px;
+}
+.text{
+    font-family: var(--text);
+    font-size: 18px;
+    line-height:30px;
+    color: var(--subtitle);
+    margin: 10px 24px;
+    font-weight: 200;
+}
+.bottonContent{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    color: var(--dark);
+    font-size: var(--title); 
+    font-size: 24px;
+    font-weight: 200;
+}
+.circle span{
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    display: grid;
+    align-items: center;
+  
+}
+.circle:hover{
+    border: 60px solid rgba(95, 95, 95, 0.408);
+    border-radius: 100%;
+    overflow:hidden;
+    margin: -60px;
+
+}
 @media (min-Width: 768px) {
     .Home{
         background-image: url('../assets/home/background-home-tablet.jpg');

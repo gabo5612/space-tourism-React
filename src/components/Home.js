@@ -1,8 +1,10 @@
 import React from 'react';
 import '../style/Home.css';
 
+
 function Home(){
-    
+ 
+      
     return(
         <div className='Home'> 
             <div className='Content'>
@@ -18,11 +20,14 @@ function Home(){
                 </div>
         </div>
         <div className='bottonContent'>
-            <div className='cicle'>
+          
+            <div className='circle' >
                 <span>EXPLORE</span>
             </div>
+            
         </div>
         </div>
+       
         </div>
      )
 }

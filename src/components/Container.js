@@ -29,6 +29,7 @@ function Container() {
 
   function handleNavClick(option) {
     setContent(option);
+    
   }
   const mediaQueryChange = (matches) => {};
   

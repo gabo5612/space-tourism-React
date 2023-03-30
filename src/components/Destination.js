@@ -7,6 +7,7 @@ import imgTitan from '../assets/destination/image-titan.png';
 
 
 function Destination(){
+   
    const planetInfo={
        planets:[
         {
@@ -39,7 +40,7 @@ function Destination(){
     ]
     
    }
-   console.log(planetInfo.planets[0].name)
+
     const defaultPlanetDescription=planetInfo.planets[0].description
     const [planetImg, setPlanetImg]=useState(imgMoon)
     const [planetTitle, setPlanetTitle]=useState('MOON')
@@ -76,7 +77,7 @@ function Destination(){
     return(
         <div className='destination'>
             <div className='topContent'>
-                <div className='titleDestination'>
+                <div className='titleContent'>
                     <h3>01</h3> <h4>PICK YOUR DESTINATION</h4>
                 </div>
                 <div className='planetImg'>
@@ -86,7 +87,7 @@ function Destination(){
             </div>
             <div className='middleContent'>
                 <div className='planetSelector'>
-                <h5><button className='planetButton' onClick={() => handlePlanetClick(imgMoon)} >MOON</button></h5>
+                <h5><button className='planetButton' autoFocus onClick={() => handlePlanetClick(imgMoon)} >MOON</button></h5>
                 <h5><button className='planetButton' onClick={() => handlePlanetClick(imgMars) }>MARS</button></h5>
                 <h5><button className='planetButton' onClick={() => handlePlanetClick(imgEuropa)}>EUROPA</button></h5>
                 <h5><button className='planetButton' onClick={() => handlePlanetClick(imgTitan) }>TITAN</button></h5>
@@ -95,7 +96,7 @@ function Destination(){
                 <div className='planetTitle'>
                     <h2>{planetTitle}</h2>
                 </div>
-                <div className='planetDescription'>
+                <div className='description'>
                     <p>{planetDescription}</p>
                 </div>
             </div>

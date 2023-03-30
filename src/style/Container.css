@@ -28,41 +28,8 @@
     top: 25px;
     left: 25px;
 }
-.title{
-    font-family: var(--title);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 100px;
-    color: var(--white);
-    margin: 16px;
-}
-.text{
-    font-family: var(--text);
-    font-size: 18px;
-    line-height:30px;
-    color: var(--subtitle);
-    margin: 10px 24px;
-    font-weight: 200;
-}
-.bottonContent{
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cicle{
-    border-radius: 100%;
-    width: 180px;
-    height: 180px;
-    background-color: white;
-    color: var(--dark);
-    font-size: var(--title);
-    display: grid;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 200;
-}
+
+
 .rightSideNavBarMobile{
     position: fixed;
     top: 35px;
