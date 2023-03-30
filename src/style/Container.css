@@ -23,6 +23,11 @@
     margin-top: 125px;
     color: var(--subtitle);
 }
+.leftSideNavBarMobile img{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
 .title{
     font-family: var(--title);
     font-style: normal;
@@ -62,6 +67,9 @@
     position: fixed;
     top: 35px;
     right: 30px;
+}
+.rightSideNavBarMobile img{
+    width: 30px;
 }
 .imgMenu{
     position: fixed;

@@ -5,12 +5,87 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    
 }
-*{
-    color: white;
-}
+
 .titleDestination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    gap:10px;
+    font-family: var(--title);
+    letter-spacing: 2.7px;
+    margin: 95px 0 20px 0;
+}
+.titleDestination h3{
+    opacity: 0.25;
+}
+.planetSelector{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    
+}
+.planetButton{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    font-family: var(--text);
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  
+}
+.planetImg{
+    display: grid;
+    justify-content: center;
+}
+.planetImg img{
+    width: 230px;
+    
+}
+.planetTitle{
+    color: var(--white);
+    font-family: var(--title);
+    font-size: 4rem;
+    text-align: center;
+    margin: 30px 0 5px;
+}
+.planetDescription{
+    font-family: var(--text);
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin: 0 30px;
+    color: var(--subtitle);
+    text-align: center;
+    letter-spacing: 1.3px;
+}
+.bottonContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    
+}
+.topSection{
+    border-top: 2px solid #383B4B;
+    width: 80vw;
+}
+.bottonContenth3{
+    color:var(--subtitle);
+    font-family: var(--text);
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+.bottonContenth2{
+    font-family: var(--title);
+    margin-top: 10px;
+    font-size: 2rem;
 }
 @media (min-Width: 768px) {
     .Destination{

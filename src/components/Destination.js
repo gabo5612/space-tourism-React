@@ -101,19 +101,16 @@ function Destination(){
             </div>
             <div className='bottonContent'>
                 <div className='topSection'>
-                    <h3>AVG. DISTANCE</h3>
-                    <h2>{planetDistance}</h2>
+                    <h3 className='bottonContenth3'>AVG. DISTANCE</h3>
+                    <h2 className='bottonContenth2'>{planetDistance}</h2>
                 </div>
                 
                 <div className='bottonSection'>
-                    <h3>EST. TRAVEL TIME</h3>
-                    <h2>{planetTravelTime}</h2>
+                    <h3 className='bottonContenth3'>EST. TRAVEL TIME</h3>
+                    <h2 className='bottonContenth2'>{planetTravelTime}</h2>
                 </div>
             </div>
         </div>
      )
 }
 export {Destination}
-/*
-
-*/
