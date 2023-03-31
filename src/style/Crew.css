@@ -12,16 +12,26 @@
 }
 .topContentCrew{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 40vh;
+    justify-content: flex-end;
 }
-.imgCrew img{
-    width: 200px; 
-    height: 225px;
+
+.crew1{
+    height: 290px;
+    margin-bottom: -4px;
+    margin-top: 9px;
+
+}
+.crew2{
+    margin-bottom: -5px;
+    height: 300px;
 }
 .bottonContentCrew {
     text-align: center;
+    height: 30vh;
+
 }
 .bottonContentCrew h3, .bottonContentCrew h2{
     color: white;
@@ -29,7 +39,7 @@
     font-family: var(--title);
 }
 .bottonContentCrew h3{
-    opacity: 0.5;
+    color: #85868b;
     font-size: 1.3rem;
     
 }
@@ -40,7 +50,32 @@
 .imgBottonLine{
     width: 80vw;
     border: 1px solid  #383B4B;
-    ;
+    
+}
+.middleContentCrew{
+    margin: -25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+}
+.crewButton{
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 100%;
+    border: none;
+    background-color: #595c66;
+    transition-duration: 0.5s;
+   
+}
+
+.crewButton:focus{
+    background-color: white;
+    transition-duration: 0.2s;
+}
+.crewButton:hover{
+   background-color: #85868b;
+   transition-duration: 0.5s;
 }
 @media (min-Width: 768px) {
     .Crew{

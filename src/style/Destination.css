@@ -20,7 +20,7 @@
     margin: 95px 0 20px 0;
 }
 .titleContent h3{
-    opacity: 0.25;
+    color: #85868b;
 }
 .planetSelector{
     display: flex;
@@ -43,17 +43,21 @@
     border-bottom: 1px solid #ffff;
     padding-bottom: 10px;
     margin-bottom: -10px;
+    transition-duration: 0.2s;
+    
 }
 .planetButton:active{
     border-bottom: 1px solid #ffff;
     padding-bottom: 10px;
     margin-bottom: -10px;
+    transition-duration: 0.2s;
 }
 
 .planetButton:hover{
     border-bottom: 1px solid #8d8d8d;
     padding-bottom: 10px;
     margin-bottom: -10px;
+    transition-duration: 0.2s;
 }
 
 .planetImg{
