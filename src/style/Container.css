@@ -27,6 +27,7 @@
     position: fixed;
     top: 25px;
     left: 25px;
+    cursor: pointer;
 }
 
 
@@ -42,6 +43,7 @@
     position: fixed;
     z-index: 1;
     right: 25px;
+    cursor: pointer;
 }
 .responsiveMenu{
     background: rgba(255, 255, 255, 0.04);
@@ -49,7 +51,7 @@
     -webkit-backdrop-filter: blur(40.7742px);
     width: 70vw;
     height: 100vh;
-    
+    transition: 0.2s;
     position: relative;
     top: -35px;
     right: -30px;
@@ -81,7 +83,10 @@
     letter-spacing: 2.7px;
     margin-left: 30px;
     margin-bottom: 40px;
+    transition: 0.2s;
+    cursor: pointer;
 }
+
 @media (min-Width: 768px) {
     .tabletMenu{
         display: none;

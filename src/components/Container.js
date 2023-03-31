@@ -31,18 +31,26 @@ function Container() {
     setContent(option);
     
   }
-  const mediaQueryChange = (matches) => {};
+  const mediaQueryChange = (matches) => {
+    if(mediaQueryChange){
+      console.log('es true')
+    }
+  };
   
   return (
     <div className='Container'>
  <MediaQuery maxWidth={768} onChange={mediaQueryChange}>
     <div className='navBarMobile'>
         <div className='leftSideNavBarMobile'>
-            <img src={logo} alt='logo'/>
+            <a href={<Home />}>
+               <img src={logo} alt='logo'/>
+            </a>
         </div>
         <div className='middleBarMobile'></div>
         <div className='rightSideNavBarMobile'>
+          
             <img src={imgSrc} alt='menu' className='imgMenu' onClick={handleClick}/>
+            
             
       <nav className={menu}>
         <div className='CloseMenu'>
@@ -77,7 +85,7 @@ function Container() {
       </div>
       </div>
       </MediaQuery>
-      <MediaQuery minWidth={1025} onChange={mediaQueryChange}>
+      <MediaQuery minWidth={1025} onChange={mediaQueryChange} onBeforeChange={mediaQueryChange}>
     <div className='navBarDesktop'>
         <div className='leftSideNavBarDesktop'>
             <img src={logo} alt='logo'/>

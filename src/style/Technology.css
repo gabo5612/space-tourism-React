@@ -1,10 +1,61 @@
-.Technology{
+.technology{
     height: 100vh;
     width: 100vw;
     background-image: url('../assets/technology/background-technology-mobile.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    display: flex;
+    flex-direction: column;
+}
+.tech1{
+    height: 200px;
+    width: 100%; 
+    background-image: url('../assets/technology/image-launch-vehicle-landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.tech2{
+    height: 200px;
+    width: 100%; 
+    background-image: url('../assets/technology/image-spaceport-landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.tech3{
+    height: 200px;
+    width: 100%; 
+    background-image: url('../assets/technology/image-space-capsule-landscape.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.middleContentTech{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.techButton{
+    color: white;
+    background-color: rgba(245, 222, 179, 0);
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 100%;
+    padding: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.techButton:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.techButton:focus{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    transition: 0.5s;
 }
 @media (min-Width: 768px) {
     .Technology{
