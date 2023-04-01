@@ -7,7 +7,7 @@
     background-size: cover; 
     display: flex;
     flex-direction: column;
-   
+   align-items: center;
 }
 
 .titleContent{
@@ -86,6 +86,8 @@
     color: var(--subtitle);
     text-align: center;
     letter-spacing: 1.3px;
+    min-width: 300px;
+    max-width: 350px;
 }
 .bottonContent{
     display: flex;
@@ -94,12 +96,10 @@
     justify-content: center;
     text-align: center;
     color: white;
-    
-}
-.topSection{
     border-top: 2px solid #383B4B;
     width: 80vw;
 }
+
 .bottonContenth3{
     color:var(--subtitle);
     font-family: var(--text);
@@ -111,15 +111,33 @@
     margin-top: 10px;
     font-size: 2rem;
 }
-@media (min-Width: 768px) {
-    .Destination{
+@media (min-width: 768px) {
+    .destination{
         background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+    .titleContent{
+        width: 94vw;
+        margin-top: 120px;
+        justify-content: flex-start;
+    }
+    .planetImg img {
+        width: 280px;
+    }
+    .description{
+        max-width: 700px;
+    }
+    .bottonContent{
+        flex-direction: row;
+        gap: 175px;
         
     }
+  
 }
 
-@media (min-Width: 1024px) {
-    .Destination{
+@media (min-width: 1400px) {
+    .destination{
         background-image: url('../assets/destination/background-destination-desktop.jpg');
+        justify-content: center;
+        flex-direction: row;
     }
 }

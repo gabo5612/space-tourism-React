@@ -42,9 +42,9 @@ function Container() {
  <MediaQuery maxWidth={768} onChange={mediaQueryChange}>
     <div className='navBarMobile'>
         <div className='leftSideNavBarMobile'>
-            <a href={<Home />}>
+          
                <img src={logo} alt='logo'/>
-            </a>
+       
         </div>
         <div className='middleBarMobile'></div>
         <div className='rightSideNavBarMobile'>
@@ -67,37 +67,36 @@ function Container() {
       </div>
       </MediaQuery>
       <MediaQuery minWidth={769} onChange={mediaQueryChange}>
-    <div className='navBarTablet'>
+    <div className='navBarBigMenu navBarTablet'>
         <div className='leftSideNavBarTablet'>
             <img src={logo} alt='logo'/>
         </div>
         <div className='middleBarTablet'></div>
         <div className='rightSideNavBarTablet'>
-        <img src={imgSrc} alt='menu' onClick={handleClick}/>
-      <nav className={menu} >
-        <ul>
-          <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(2)}>01  DESTINATION</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
-        </ul>
-      </nav>
+            <nav className='bigMenu tabletMenu' >
+              <ul>
+                <li><button className='navButton' onClick={() => handleNavClick(1)}>HOME</button></li>
+                <li><button className='navButton' onClick={() => handleNavClick(2)}>DESTINATION</button></li>
+                <li><button className='navButton' onClick={() => handleNavClick(3)}>CREW</button></li>
+                <li><button className='navButton' onClick={() => handleNavClick(4)}>TECHNOLOGY</button></li>
+              </ul>
+            </nav>
       </div>
       </div>
       </MediaQuery>
-      <MediaQuery minWidth={1025} onChange={mediaQueryChange} onBeforeChange={mediaQueryChange}>
-    <div className='navBarDesktop'>
+      <MediaQuery minWidth={1400} onChange={mediaQueryChange} onBeforeChange={mediaQueryChange}>
+    <div className='navBarBigMenu navBarDesktop'>
         <div className='leftSideNavBarDesktop'>
-            <img src={logo} alt='logo'/>
+          
         </div>
         <div className='middleBarDesktop'></div>
         <div className='rightSideNavBarDesktop'>
-      <nav className='desktopMenu' >
+      <nav className='bigMenu desktopMenu' >
         <ul>
-          <li><button className='navButton' onClick={() => handleNavClick(1)}>00 HOME</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(2)}>01 DESTINATION</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(3)}>02 CREW</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(4)}>03 TECHNOLOGY</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(1)}>HOME</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(2)}>DESTINATION</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(3)}>CREW</button></li>
+          <li><button className='navButton' onClick={() => handleNavClick(4)}>TECHNOLOGY</button></li>
         </ul>
       </nav>
       </div>

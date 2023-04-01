@@ -64,7 +64,7 @@
     }
 }
 
-@media (min-Width: 1024px) {
+@media (min-Width: 1400px) {
     .Technology{
         background-image: url('../assets/technology/background-technology-desktop.jpg');
     }
