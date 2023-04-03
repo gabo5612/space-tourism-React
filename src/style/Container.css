@@ -1,4 +1,4 @@
-.navBarMobile,.navBarTablet,.navBarDesktop{
+.navBarMobile,.navBarTablet{
     position:fixed ;
 }
 
@@ -132,8 +132,3 @@
     }
 }
 
-@media (min-Width: 1400px) {
-    .desktopMenu{
-        display: none;
-    }
-}

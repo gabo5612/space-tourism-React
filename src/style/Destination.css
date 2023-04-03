@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
    align-items: center;
+   justify-content: space-evenly;
 }
 
 .titleContent{
@@ -99,7 +100,12 @@
     border-top: 2px solid #383B4B;
     width: 80vw;
 }
-
+.rightSideDektopDestination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .bottonContenth3{
     color:var(--subtitle);
     font-family: var(--text);
@@ -111,26 +117,37 @@
     margin-top: 10px;
     font-size: 2rem;
 }
+.rightSideDektopContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @media (min-width: 768px) {
     .destination{
         background-image: url('../assets/destination/background-destination-tablet.jpg');
+       
     }
     .titleContent{
         width: 94vw;
-        margin-top: 120px;
+        margin-top: 40px;
         justify-content: flex-start;
+        font-size: 1.2rem
     }
     .planetImg img {
-        width: 280px;
+        width: 300px;
+        margin-bottom: -50px;
     }
     .description{
-        max-width: 700px;
+        max-width: 600px;
     }
     .bottonContent{
         flex-direction: row;
         gap: 175px;
+        width: 100%;
         
     }
+   
   
 }
 
@@ -139,5 +156,36 @@
         background-image: url('../assets/destination/background-destination-desktop.jpg');
         justify-content: center;
         flex-direction: row;
+    }
+    .rightSideDektopDestination{
+        justify-content: flex-start;
+        width: 35vw;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+    .titleContent {
+        width: 40vw;
+    }
+    .planetImg{
+        padding-top: 50px;
+    }
+    .planetImg img {
+        width: 440px;
+    }
+    .planetTitle{
+        font-size: 7rem;
+    }
+    .middleContentDestination{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .description{
+        text-align: justify;
+        margin-bottom: 35px;
+    }
+    .bottonContent{
+        gap: 75px;
     }
 }

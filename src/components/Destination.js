@@ -85,30 +85,32 @@ function Destination(){
                 </div>
                 
             </div>
-            <div className='middleContent'>
-                <div className='planetSelector'>
-                <h5><button className='planetButton' autoFocus onClick={() => handlePlanetClick(imgMoon)} >MOON</button></h5>
-                <h5><button className='planetButton' onClick={() => handlePlanetClick(imgMars) }>MARS</button></h5>
-                <h5><button className='planetButton' onClick={() => handlePlanetClick(imgEuropa)}>EUROPA</button></h5>
-                <h5><button className='planetButton' onClick={() => handlePlanetClick(imgTitan) }>TITAN</button></h5>
-                
-                  </div>
-                <div className='planetTitle'>
-                    <h2>{planetTitle}</h2>
+            <div className='rightSideDektopDestination'>
+                <div className='middleContent middleContentDestination'>
+                    <div className='planetSelector'>
+                    <h5><button className='planetButton' autoFocus onClick={() => handlePlanetClick(imgMoon)} >MOON</button></h5>
+                    <h5><button className='planetButton' onClick={() => handlePlanetClick(imgMars) }>MARS</button></h5>
+                    <h5><button className='planetButton' onClick={() => handlePlanetClick(imgEuropa)}>EUROPA</button></h5>
+                    <h5><button className='planetButton' onClick={() => handlePlanetClick(imgTitan) }>TITAN</button></h5>
+                    
+                    </div>
+                    <div className='planetTitle'>
+                        <h2>{planetTitle}</h2>
+                    </div>
+                    <div className='description'>
+                        <p>{planetDescription}</p>
+                    </div>
                 </div>
-                <div className='description'>
-                    <p>{planetDescription}</p>
-                </div>
-            </div>
-            <div className='bottonContent'>
-                <div className='topSection'>
-                    <h3 className='bottonContenth3'>AVG. DISTANCE</h3>
-                    <h2 className='bottonContenth2'>{planetDistance}</h2>
-                </div>
-                
-                <div className='bottonSection'>
-                    <h3 className='bottonContenth3'>EST. TRAVEL TIME</h3>
-                    <h2 className='bottonContenth2'>{planetTravelTime}</h2>
+                <div className='bottonContent'>
+                    <div className='topSection'>
+                        <h3 className='bottonContenth3'>AVG. DISTANCE</h3>
+                        <h2 className='bottonContenth2'>{planetDistance}</h2>
+                    </div>
+                    
+                    <div className='bottonSection'>
+                        <h3 className='bottonContenth3'>EST. TRAVEL TIME</h3>
+                        <h2 className='bottonContenth2'>{planetTravelTime}</h2>
+                    </div>
                 </div>
             </div>
         </div>

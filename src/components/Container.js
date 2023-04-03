@@ -84,24 +84,7 @@ function Container() {
       </div>
       </div>
       </MediaQuery>
-      <MediaQuery minWidth={1400} onChange={mediaQueryChange} onBeforeChange={mediaQueryChange}>
-    <div className='navBarBigMenu navBarDesktop'>
-        <div className='leftSideNavBarDesktop'>
-          
-        </div>
-        <div className='middleBarDesktop'></div>
-        <div className='rightSideNavBarDesktop'>
-      <nav className='bigMenu desktopMenu' >
-        <ul>
-          <li><button className='navButton' onClick={() => handleNavClick(1)}>HOME</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(2)}>DESTINATION</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(3)}>CREW</button></li>
-          <li><button className='navButton' onClick={() => handleNavClick(4)}>TECHNOLOGY</button></li>
-        </ul>
-      </nav>
-      </div>
-      </div>
-      </MediaQuery>
+
       {content === 1 && <Home />}
       {content === 2 && <Destination />}
       {content === 3 && <Crew />}

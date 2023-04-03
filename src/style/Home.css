@@ -24,20 +24,21 @@
     background-size: cover; 
     color: var(--white);
 }
-.Content{
+.content{
     text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
-.topContent{
+.topContentHome {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 40vh;
     align-items: center;
 }
-.title{
+.titleHome{
     font-family: var(--title);
     font-style: normal;
     font-weight: 400;
@@ -46,7 +47,7 @@
     color: var(--white);
     margin: 16px;
 }
-.text{
+.textHome{
     font-family: var(--text);
     font-size: 18px;
     line-height:30px;
@@ -56,11 +57,11 @@
     min-width: 200px;
     max-width: 400px;
 }
-.bottonContent{
-    margin-top: 25px;
+.bottonContentHome {
     display: flex;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
+    height: 25vh;
 }
 .circle{
     color: var(--dark);
@@ -84,18 +85,21 @@
     margin: -60px;
 
 }
+.subTitleHome{
+    color: var(--subtitle);
+}
 @media (min-Width: 768px) {
     .Home{
         background-image: url('../assets/home/background-home-tablet.jpg');
     }
-    .subTitle{
+    .subTitleHome{
         font-size: 1.4rem;
     }
-    .title{
+    .titleHome{
         font-size: 9rem;
         margin: 40px;
     }
-    .text{
+    .textHome{
         font-size: 1.3rem;
     }
     
@@ -103,34 +107,44 @@
         width: 220px;
         height: 220px;
     }
+    .content{
+        justify-content: center;
+    }
+    .topContentHome{
+        padding-bottom: 50px;
+    }
 }
 
 @media (min-Width: 1400px) {
     .Home{
         background-image: url('../assets/home/background-home-desktop.jpg');
     }
-    .Content{
+    .content{
         flex-direction: row;
+        align-items: center;
+        gap: 400px;
     }
-    .subTitle{
+    .subTitleHome{
         font-size: 1.8rem;
+        margin-left: 20px;
     }
-    .title{
+    .titleHome{
         font-size: 10rem;
-        margin: 40px;
+        margin: 40px 10px;
     }
-    .text{
+    .textHome{
         font-size: 1.5rem;
         max-width: 500px;
         letter-spacing: 1.3px;
         line-height: 33px;
+        text-align: justify;
     }
     
     .circle span{
-        width: 220px;
-        height: 220px;
+        width: 280px;
+        height: 280px;
     }
-    .bottonContent {
+    .bottonContentHome {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -139,11 +153,19 @@
         height: 675px;
     }
     .middleBarTablet{
-        border-bottom: 1px solid #ffffff87;
+        border-bottom: 1px solid #383B4B;
         width: 35vw;
         position: fixed;
         z-index: 1;
         top: 50px;
         left: 130px;
+    }
+    .topContentHome {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 17vh;
+        width: 44vw;
+        align-items: flex-start;
     }
 }

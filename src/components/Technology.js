@@ -54,18 +54,20 @@ function Technology(){
 
                 </div>
             </div>
-            <div className='middleContentTech'>
-                <button autoFocus onClick={()=> handleButtonClick('tech1')}className='techButton'>1</button>
-                <button onClick={()=> handleButtonClick('tech2')}className='techButton'>2</button>
-                <button onClick={()=> handleButtonClick('tech3')}className='techButton'>3</button>
-  
-            </div>
-            <div className='bottonContentCrew'>
-                <h3>THE TERMINOLOGY...</h3>
-                <h2>{techName}</h2>
-                <p className='description'>{techDescription}</p>
+            
+                <div className='middleContentTech'>
+                    <button autoFocus onClick={()=> handleButtonClick('tech1')}className='techButton'>1</button>
+                    <button onClick={()=> handleButtonClick('tech2')}className='techButton'>2</button>
+                    <button onClick={()=> handleButtonClick('tech3')}className='techButton'>3</button>
+    
+                </div>
+                <div className='bottonContentCrew'>
+                    <h3>THE TERMINOLOGY...</h3>
+                    <h2>{techName}</h2>
+                    <p className='description'>{techDescription}</p>
 
-            </div>
+                </div>
+           
         </div>
      )
 } 
