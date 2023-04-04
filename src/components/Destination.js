@@ -77,7 +77,7 @@ function Destination(){
     return(
         <div className='destination'>
             <div className='topContent'>
-                <div className='titleContent'>
+                <div className='titleContent titleContentDestination'>
                     <h3>01</h3> <h4>PICK YOUR DESTINATION</h4>
                 </div>
                 <div className='planetImg'>

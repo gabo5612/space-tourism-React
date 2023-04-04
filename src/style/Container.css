@@ -104,8 +104,9 @@
     .bigMenu ul{
         display: flex;
         align-items: flex-end;
-        justify-content: space-evenly;
+        justify-content: center;
         height: 100px;
+       
 
     }
     
@@ -132,3 +133,9 @@
     }
 }
 
+@media (min-width: 1400px) {
+    .bigMenu ul{
+        gap: 100px;
+    }
+
+}

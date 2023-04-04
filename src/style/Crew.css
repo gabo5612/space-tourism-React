@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover; 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-direction: column;
     
 }
@@ -14,8 +14,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 40vh;
+    
     justify-content: flex-end;
+}
+.switchContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
 }
 
 .crew1{
@@ -31,6 +37,10 @@
 .bottonContentCrew {
     text-align: center;
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .bottonContentCrew h3, .bottonContentCrew h2{
@@ -53,7 +63,7 @@
     
 }
 .middleContentCrew{
-    margin: -25px 0;
+    margin: 30px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -82,10 +92,83 @@
         background-image: url('../assets/crew/background-crew-tablet.jpg');
         
     }
+    .switchContent{
+        flex-direction: column-reverse;
+    }
+    .imgBottonLine {
+        border: none;
+    }
+    .crew1 {
+        height: 580px;
+    }
+    .crew2 {
+
+        height: 587px;
+    }
+    .bottonContentCrew h3{
+        font-size: 1.7rem;
+    }
+    .bottonContentCrew h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+    }
+    .description{
+        font-size: 1.4rem;
+        line-height: 40px;
+    }
+    .crewButton{
+        padding: 7px;
+    }
 }
 
 @media (min-Width: 1400px) {
     .Crew{
         background-image: url('../assets/crew/background-crew-desktop.jpg');
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+    }
+    .rightSideCrew{
+        display: flex;
+        height: 100vh;
+        width: 30vw;
+        align-items: flex-end;
+    }
+    .crew1 {
+        height: 1050px;
+    }
+    .crew2 {
+        height: 1050px;
+    }
+    .topContentCrew {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 70vh;
+        width: 40vw;
+        justify-content: space-around;
+    }
+    .bottonContentCrew {
+        align-items: flex-start;
+    }
+    .titleContentCrew{
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+ 
+    .bottonContentCrew h3 {
+        font-size: 2.3rem;
+    }
+    .bottonContentCrew h2 {
+        font-size: 5rem; 
+        margin-left: 0;   
+    }
+    .descriptionCrew{
+        margin-left: 5px;
+        font-size: 1.6rem;
+    }
+    .crewButton {
+        padding: 11px;
     }
 }

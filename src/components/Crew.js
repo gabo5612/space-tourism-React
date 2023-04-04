@@ -4,7 +4,12 @@ import imgCrew1 from '../assets/crew/image-douglas-hurley.png'
 import imgCrew2 from '../assets/crew/image-mark-shuttleworth.png'
 import imgCrew3 from '../assets/crew/image-victor-glover.png'
 import imgCrew4 from '../assets/crew/image-anousheh-ansari.png'
+import MediaQuery from "react-responsive";
 function Crew(){
+
+    const mediaQueryChange = (matches) => {
+
+    };
     const crewInfo= {
         crew:[
             {
@@ -74,27 +79,60 @@ function Crew(){
     
     return(
         <div className='Crew'>
+            <MediaQuery maxWidth={1399} onChange={mediaQueryChange}>
             <div className='topContentCrew'>
-                <div className='titleContent'>
+                <div className='titleContent '>
                     <h3>02</h3> <h4>MEET YOUR CREW</h4>
                 </div>
-                <div className='imgCrew'>
-                    <img src={imgCrew} alt={crewName} className={crewClass}/>
+            </div>
+            <div className='switchContent'>
+                    <div className='imgCrew'>
+                        <img src={imgCrew} alt={crewName} className={crewClass}/>
+                    </div>
+                    <div className='imgBottonLine'></div>
+                
+                <div className='middleContentCrew'>
+                    <button autoFocus onClick={()=> handleButtonClick(imgCrew1)}className='crewButton'></button>
+                    <button onClick={()=> handleButtonClick(imgCrew2)}className='crewButton'></button>
+                    <button onClick={()=> handleButtonClick(imgCrew3)}className='crewButton'></button>
+                    <button onClick={()=> handleButtonClick(imgCrew4)}className='crewButton'></button>
                 </div>
-                <div className='imgBottonLine'></div>
-            </div>
-            <div className='middleContentCrew'>
-                <button autoFocus onClick={()=> handleButtonClick(imgCrew1)}className='crewButton'></button>
-                <button onClick={()=> handleButtonClick(imgCrew2)}className='crewButton'></button>
-                <button onClick={()=> handleButtonClick(imgCrew3)}className='crewButton'></button>
-                <button onClick={()=> handleButtonClick(imgCrew4)}className='crewButton'></button>
-            </div>
-            <div className='bottonContentCrew'>
-                <h3>{crewCharge}</h3>
-                <h2>{crewName}</h2>
-                <p className='description'>{crewDescription}</p>
+                <div className='bottonContentCrew'>
+                    <h3>{crewCharge}</h3>
+                    <h2>{crewName}</h2>
+                    <p className='description'>{crewDescription}</p>
 
+                </div>
             </div>
+            </MediaQuery>
+            <MediaQuery minWidth={1400} onChange={mediaQueryChange}>
+            <div className='topContentCrew'>
+                <div className='leftSideCrew'>
+                    <div className='titleContent titleContentCrew '>
+                            <h3>02</h3> <h4>MEET YOUR CREW</h4>
+                        </div>
+                    </div>
+                        <div className='bottonContentCrew'>
+                            <h3>{crewCharge}</h3>
+                            <h2>{crewName}</h2>
+                            <p className='description descriptionCrew'>{crewDescription}</p>
+
+                        </div>
+                    
+                    <div className='middleContentCrew'>
+                        <button autoFocus onClick={()=> handleButtonClick(imgCrew1)}className='crewButton'></button>
+                        <button onClick={()=> handleButtonClick(imgCrew2)}className='crewButton'></button>
+                        <button onClick={()=> handleButtonClick(imgCrew3)}className='crewButton'></button>
+                        <button onClick={()=> handleButtonClick(imgCrew4)}className='crewButton'></button>
+                    </div>
+                </div>
+            <div className='rightSideCrew'>
+                <div className='imgCrew'>
+                        <img src={imgCrew} alt={crewName} className={crewClass}/>
+                    </div>
+            </div>
+
+            </MediaQuery>
         </div>
      )
 }

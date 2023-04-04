@@ -130,7 +130,7 @@
     }
     .titleContent{
         width: 94vw;
-        margin-top: 40px;
+        margin-top: 130px;
         justify-content: flex-start;
         font-size: 1.2rem
     }
@@ -147,6 +147,9 @@
         width: 100%;
         
     }
+    .titleContentDestination{
+        margin-top: -45px;
+    }
    
   
 }
@@ -159,7 +162,7 @@
     }
     .rightSideDektopDestination{
         justify-content: flex-start;
-        width: 35vw;
+        width: 25vw;
         align-items: flex-start;
         display: flex;
         flex-direction: column;
@@ -167,11 +170,12 @@
     .titleContent {
         width: 40vw;
     }
+   
     .planetImg{
         padding-top: 50px;
     }
     .planetImg img {
-        width: 440px;
+        width: 700px;
     }
     .planetTitle{
         font-size: 7rem;
@@ -179,11 +183,13 @@
     .middleContentDestination{
         display: flex;
         flex-direction: column;
-        align-items: baseline;
+        align-items: flex-start;
+        margin-left: 20px;
     }
     .description{
         text-align: justify;
         margin-bottom: 35px;
+        margin-left: -20px;
     }
     .bottonContent{
         gap: 75px;
